@@ -190,10 +190,10 @@ int main(int argc, char *argv[])
 		int r = pthread_join(threads[i], &status);
 
 		if (r) 
-        {
+        	{
 			exit(-1);
 		}
-	}
+    }
 
     pthread_mutex_destroy(&mutex_del);
     pthread_mutex_destroy(&mutex_add);
